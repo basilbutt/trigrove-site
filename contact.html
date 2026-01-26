@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Trigove Consulting</title>
+  <meta name="description" content="Contact Trigove Consulting to book a cybersecurity consult or request an assessment." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Trigove Consulting</span>
+      </a>
+
+      <nav class="nav">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page" class="btn btn-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">Tell me what you’re trying to solve. I’ll respond with next steps.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Book a consult</h2>
+          <p class="muted">
+            Use the form and include your preferred times. If you already have a booking link (Calendly),
+            you can add it here later.
+          </p>
+
+          <div class="card">
+            <h3>Typical engagements</h3>
+            <ul class="bullet">
+              <li>Security Assessment + Roadmap</li>
+              <li>SOC 2 / ISO readiness support</li>
+              <li>Vendor risk program (TPRM)</li>
+              <li>vCISO monthly support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Request an assessment</h2>
+
+          <!-- Netlify Form -->
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+
+            <label>
+              Your name
+              <input name="name" type="text" required />
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" required />
+            </label>
+
+            <label>
+              Company (optional)
+              <input name="company" type="text" />
+            </label>
+
+            <label>
+              What do you need help with?
+              <select name="topic" required>
+                <option value="">Select one…</option>
+                <option>Security Assessment</option>
+                <option>vCISO Services</option>
+                <option>SOC 2 / ISO Readiness</option>
+                <option>Vendor Risk (TPRM)</option>
+                <option>Penetration Testing</option>
+                <option>AI Governance</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="6" placeholder="Briefly describe your environment, timeline, and goals." required></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Send</button>
+            <p class="muted small" style="margin-top:10px;">
+              This form is protected by Netlify’s form handling when deployed on Netlify.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Trigove Consulting</div>
+        <p class="muted small">Cybersecurity assessments, GRC, vendor risk, compliance readiness, and vCISO support.</p>
+      </div>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="muted small">© <span id="year"></span> Trigove Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
