@@ -63,6 +63,9 @@ body{
   height: 30px;
   width: auto;
   display:block;
+  
+  height: 40px !important;
+  border: 1px solid red; /* temporary */
 }
 
 .nav{
