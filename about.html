@@ -2,116 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | TriGrove Security</title>
-  <meta name="description" content="TriGrove Security provides practical cybersecurity consulting for SMBs and growing teams." />
-  <link rel="icon" href="assets/favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | TriGrove Consulting</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="TriGrove Security home">
-        <img class="logo" src="assets/logo-light.png" alt="TriGrove Security" />
-      </a>
+<body data-page="contact">
 
-      <nav class="nav">
-        <a href="services.html">Services</a>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="contact.html" class="btn btn-primary">Book a Consult</a>
-      </nav>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html">
+      <img class="logo" src="./assets/logo-light.png" alt="TriGrove Consulting" />
+      <span class="brand-name">TriGrove Consulting</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./advisors.html">Advisors</a>
+      <a href="./approach.html">Approach</a>
+      <a href="./contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Request a consult</h1>
+      <p class="lead">Tell us what you’re solving. We’ll respond within 1 business day.</p>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <h1>About</h1>
-        <p class="lead">Practical, risk-based security programs designed to work in the real world.</p>
+  <section class="section alt">
+    <div class="container split">
+      <div class="card">
+        <h2>What helps us respond quickly</h2>
+        <ul class="checklist">
+          <li>Your objective (security readiness, reporting, monthly close, etc.)</li>
+          <li>Any timeline constraints</li>
+          <li>Environment context (tools, systems, stakeholders)</li>
+          <li>Where you’re feeling risk or uncertainty</li>
+        </ul>
+        <p class="small muted">Advisors are independent professionals engaged on a per-engagement basis.</p>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container split">
-        <div class="card">
-          <h2>What TriGrove does</h2>
-          <p class="muted">
-            We help organizations reduce cybersecurity risk and improve audit readiness through clear priorities,
-            lightweight governance, and measurable controls.
-          </p>
-          <ul class="checklist">
-            <li>Assess security posture and identify material gaps</li>
-            <li>Build governance (GRC), vendor risk, and evidence processes</li>
-            <li>Prepare for compliance frameworks like SOC 2 and ISO 27001</li>
-            <li>Provide ongoing leadership through vCISO services</li>
-          </ul>
-        </div>
+      <div class="card">
+        <h2>Contact</h2>
 
-        <div>
-          <h2>Our approach</h2>
-          <p class="muted">
-            Security should enable the business. Our approach is straightforward: understand the environment,
-            identify the highest-impact risks, and implement controls teams can maintain.
-          </p>
+        <!-- Front-end skeleton form (not wired to email yet) -->
+        <form>
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required />
 
-          <div class="grid-2">
-            <div class="card">
-              <h3>Risk-based</h3>
-              <p>Prioritize what matters most and avoid busywork controls.</p>
-            </div>
-            <div class="card">
-              <h3>Audit-ready</h3>
-              <p>Create repeatable evidence processes—not last-minute scrambles.</p>
-            </div>
-            <div class="card">
-              <h3>Implementable</h3>
-              <p>Recommendations with realistic sequencing and clear ownership.</p>
-            </div>
-            <div class="card">
-              <h3>Executive-friendly</h3>
-              <p>Clear reporting that supports decision-making.</p>
-            </div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="">Select…</option>
+
+            <!-- Cybersecurity -->
+            <option value="assessment">Assessment + roadmap</option>
+            <option value="architecture">Architecture review</option>
+            <option value="soc2">SOC 2 readiness</option>
+            <option value="iso">ISO 27001 alignment</option>
+            <option value="metrics">Security metrics & reporting</option>
+            <option value="vciso">vCISO advisory</option>
+            <option value="tabletop">Incident readiness tabletop</option>
+            <option value="recovery">Recovery readiness validation</option>
+            <option value="vendorrisk">Vendor risk (TPRM)</option>
+
+            <!-- Operations advisory -->
+            <option value="bookkeeping">Bookkeeping oversight</option>
+            <option value="ap-ar">AP/AR process management</option>
+            <option value="reporting">Management reporting</option>
+
+            <option value="other">Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="7" placeholder="Briefly describe what you’re trying to accomplish…" required></textarea>
+
+          <div class="cta-row" style="margin-top:12px;">
+            <button class="btn btn-primary" type="submit">Send request</button>
+            <a class="btn btn-ghost" href="./services.html">View services</a>
           </div>
 
-          <p class="muted small" style="margin-top: 14px;">
-            Tip: add your bio, certifications, and industries served here when ready.
+          <p class="small muted" style="margin-top:10px;">
+            Note: This form is currently a front-end placeholder. If you want it to email you, tell me whether you prefer Netlify or Formspree.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container">
-        <div class="cta-banner">
-          <div>
-            <h2>Want to talk through your situation?</h2>
-            <p class="muted">Book a consult and we’ll recommend a practical first step.</p>
-          </div>
-          <a class="btn btn-primary" href="contact.html">Book a Consult</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <div class="footer-brand">TriGrove Security</div>
-        <p class="muted small">Cybersecurity assessments, GRC, vendor risk, compliance readiness, and vCISO support.</p>
-      </div>
-      <div class="footer-links">
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        </form>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <p class="muted small">© <span id="year"></span> TriGrove Security. All rights reserved.</p>
-    </div>
-  </footer>
+  </section>
+</main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">TriGrove Consulting</div>
+      <p class="small muted" style="max-width: 520px;">Independent advisors engaged on a per-engagement basis.</p>
+    </div>
+    <div class="footer-links">
+      <a href="./services.html">Services</a>
+      <a href="./advisors.html">Advisors</a>
+      <a href="./approach.html">Approach</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="container" style="padding-top:10px;">
+    <p class="small muted">© <span id="y"></span> TriGrove Consulting.</p>
+  </div>
+</footer>
+
+<script src="./main.js"></script>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
