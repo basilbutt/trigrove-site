@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advisors | TriGrove Consulting</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="advisors">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html">
+      <img class="logo" src="./assets/logo-light.png" alt="TriGrove Consulting" />
+      <span class="brand-name">TriGrove Consulting</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./advisors.html" aria-current="page">Advisors</a>
+      <a href="./approach.html">Approach</a>
+      <a class="btn btn-primary nav-cta" href="./contact.html">Request a consult</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="advisors-top">
+        <div>
+          <h1>Advisors available for consultation</h1>
+          <p class="lead">A curated network of independent specialists engaged on a per-engagement basis.</p>
+          <p class="small muted">
+            Advisors are not employees. Availability may vary by engagement and schedule.
+          </p>
+        </div>
+
+        <div class="filters">
+          <span class="badge">Filter</span>
+          <select id="expertiseFilter" aria-label="Filter advisors by expertise">
+            <option value="all">All expertise</option>
+            <option value="GRC">GRC</option>
+            <option value="SOC2">SOC 2</option>
+            <option value="Cloud">Cloud</option>
+            <option value="IR">Incident Response</option>
+            <option value="VendorRisk">Vendor Risk</option>
+            <option value="Ops">Operations</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:16px;">
+        <div class="card" data-tags="GRC,SOC2">
+          <div class="advisor-card">
+            <div class="avatar">AR</div>
+            <div class="advisor-meta">
+              <h3>Advisor (Sample)</h3>
+              <p class="small muted">GRC • SOC 2 • ISO 27001</p>
+              <p class="muted">Senior compliance and controls advisor focused on evidence-ready programs.</p>
+              <div class="tag-row">
+                <span class="tag">GRC</span><span class="tag">SOC2</span><span class="tag">ISO</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="./contact.html?topic=soc2&advisor=Advisor%20(Sample)">Request consult</a>
+                <a class="btn btn-ghost" href="./services.html#grc">Related services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tags="Cloud">
+          <div class="advisor-card">
+            <div class="avatar">CS</div>
+            <div class="advisor-meta">
+              <h3>Advisor (Sample)</h3>
+              <p class="small muted">Cloud • Architecture • IAM</p>
+              <p class="muted">Cloud security architecture reviews with practical sequencing for teams.</p>
+              <div class="tag-row">
+                <span class="tag">Cloud</span><span class="tag">Architecture</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="./contact.html?topic=architecture&advisor=Advisor%20(Sample)">Request consult</a>
+                <a class="btn btn-ghost" href="./services.html#assessments">Related services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tags="IR">
+          <div class="advisor-card">
+            <div class="avatar">IR</div>
+            <div class="advisor-meta">
+              <h3>Advisor (Sample)</h3>
+              <p class="small muted">Incident Response • Tabletop • Recovery</p>
+              <p class="muted">Incident readiness exercises and recovery validation for high-impact scenarios.</p>
+              <div class="tag-row">
+                <span class="tag">IR</span><span class="tag">Tabletop</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="./contact.html?topic=tabletop&advisor=Advisor%20(Sample)">Request consult</a>
+                <a class="btn btn-ghost" href="./services.html#incident">Related services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tags="VendorRisk">
+          <div class="advisor-card">
+            <div class="avatar">VR</div>
+            <div class="advisor-meta">
+              <h3>Advisor (Sample)</h3>
+              <p class="small muted">Vendor Risk • TPRM • Due diligence</p>
+              <p class="muted">Third-party risk program design and vendor review support.</p>
+              <div class="tag-row">
+                <span class="tag">VendorRisk</span><span class="tag">TPRM</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="./contact.html?topic=vendorrisk&advisor=Advisor%20(Sample)">Request consult</a>
+                <a class="btn btn-ghost" href="./services.html#vciso">Related services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tags="Ops">
+          <div class="advisor-card">
+            <div class="avatar">OP</div>
+            <div class="advisor-meta">
+              <h3>Advisor (Sample)</h3>
+              <p class="small muted">Operations • Reporting • Process</p>
+              <p class="muted">Operational cadence and reporting support for small teams (close, AP/AR, KPIs).</p>
+              <div class="tag-row">
+                <span class="tag">Ops</span><span class="tag">Reporting</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="./contact.html?topic=bookkeeping&advisor=Advisor%20(Sample)">Request consult</a>
+                <a class="btn btn-ghost" href="./services.html#finance-ops">Related services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cta-banner" style="margin-top:18px;">
+        <div>
+          <h3 style="margin:0 0 6px;">Need a specific specialty?</h3>
+          <p class="muted" style="margin:0;">Describe your situation and we’ll match the right advisor(s).</p>
+        </div>
+        <a class="btn btn-primary" href="./contact.html">Request a consult</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">TriGrove Consulting</div>
+      <p class="small muted" style="max-width: 520px;">Advisors are independent professionals engaged on a per-engagement basis.</p>
+    </div>
+    <div class="footer-links">
+      <a href="./services.html">Services</a>
+      <a href="./advisors.html">Advisors</a>
+      <a href="./approach.html">Approach</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="container" style="padding-top:10px;">
+    <p class="small muted">© <span id="y"></span> TriGrove Consulting.</p>
+  </div>
+</footer>
+
+<script src="./main.js"></script>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
